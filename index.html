@@ -1,0 +1,91 @@
+<!DOCTYPE html>  
+<html>  
+<head>  
+
+<title>  
+Calculator Program in JavaScript  
+</title>  
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css"> 
+</head>  
+<body>  
+   <div class="columns">
+    <div class="column is-4 is-hidden-touch"></div>
+    <div class="column is-2 " style="margin-top:10%;">
+    <h1 class="title is-4" style="width:300%; "> Calculator Program in JavaScript </h1>  
+            <input class= "input" style="margin-left:25%"  id="textview" name="textview">  
+    
+         <div class="field is-grouped " style="margin-left:30%; margin-top:3%;">
+          <p class="control">
+              <input class = "button" type = "button" value="C" onclick = "clear1()" >    
+          </p>
+          <p class="control">
+              <input  class = "button" type = "button" value = "B" onclick = "backspace()" >  
+              </p>  
+              <p class="control">
+              <input  class = "button" type = "button" value = "/" onclick = "insert('/')" >    
+              </p>
+              <p class="control">
+              <input class = "button" type = "button" value = "x" onclick = "insert('*')" >  
+              </p>
+          </div>
+          <div class="field is-grouped " style="margin-left:30%; margin-top:3%;">
+               <p class="control">
+           <input class = "button" type = "button" value = "7" onclick = "insert(7)" > 
+           </p>   
+           <p class="control">
+           <input class = "button" type = "button" value = "8" onclick = "insert(8)" > 
+           </p>   
+           <p class="control">
+           <input class = "button" type = "button" value = "9" onclick = "insert(9)" >  
+           </p> 
+           <p class="control">
+           <input class = "button" type = "button" value = "-" onclick = "insert('-')" > 
+           </p>
+          </div>
+          <div class="field is-grouped " style="margin-left:30%; margin-top:3%;">
+               <p class="control">
+           <input class = "button" type = "button" value = "4" onclick = "insert(4)" >    
+               </p>
+               <p class="control">
+           <input class = "button" type = "button" value = "5" onclick = "insert(5)" >    
+               </p>
+               <p class="control">
+           <input class = "button" type = "button" value = "6" onclick = "insert(6)" >  
+               </p>
+               <p class="control">  
+           <input class = "button" type = "button" value = "+" onclick = "insert('+')" >    
+               </p>
+          </div>
+        <div class="field is-grouped " style="margin-left:30%; margin-top:3%;">
+               <p class="control">
+           <input class = "button" type = "button" value = "1" onclick = "insert(1)" > 
+               </p>
+               <p class="control">   
+            <input class = "button" type = "button" value = "2" onclick = "insert(2)" >    
+               </p>
+               <p class="control">
+           <input class = "button" type = "button" value = "3" onclick = "insert(3)" >    
+               </p>
+               <p class="control">
+            <input class = "button"  type = "button" value = "=" onclick = "equal()">
+               </p>
+          </div>
+        
+        <div class="field is-grouped has-text-centered" style="margin-left:30%; margin-top:3%;">
+               <p class="control">
+                    <input class = "button"  type = "button" value = "&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;0&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;" onclick = "insert(0)" >  
+               </p>
+               <p class="control">
+                    <input class = "button" type = "button" value = "&nbsp;.&nbsp;" onclick = "insert('.')">       
+               </p>
+          </div>
+             
+            
+      
+    
+   </div>
+     </div>
+    
+     <script src="script.js"></script>
+ </body>  
+ </html>  
